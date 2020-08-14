@@ -1,0 +1,20 @@
+Source: matlink-gpapi
+Section: utils
+Priority: optional
+Maintainer: Matlink <matlink@matlink.fr>
+Uploaders: Andres Salomon <dilinger@debian.org>
+Build-Depends: debhelper (>= 9.0~),
+               dh-python,
+               python3,
+               python3-setuptools,
+               protobuf-compiler
+Standards-Version: 4.1.0
+Homepage: https://github.com/matlink/googleplay-api
+
+Package: python3-matlink-gpapi
+Architecture: all
+Depends: ${python3:Depends},
+         ${misc:Depends},
+         python3-crypto
+Recommends: fdroidserver, dummydroid
+Description: Google Play Python API
